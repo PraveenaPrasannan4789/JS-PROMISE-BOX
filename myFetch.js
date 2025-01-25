@@ -3,11 +3,9 @@ function myFetch(url){
         $.ajax({
             url: url,
             success: (data) => {
-              console.log("data", data);
               res(data);
             },
             error: (xhr,statusText) => {
-                console.log("error", statusText);
                 rej(statusText);
               },
           });
